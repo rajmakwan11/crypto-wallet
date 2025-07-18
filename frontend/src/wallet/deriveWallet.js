@@ -24,7 +24,7 @@ export async function deriveWallets(mnemonic) {
   // Solana derivation via backend
   let solanaWallet = null;
   try {
-    const res = await axios.post('http://localhost:5000/api/derive-solana', {
+    const res = await axios.post(''https://crypto-wallet-1-5y4j.onrender.com/api/derive-solana'', {
       mnemonic,
     });
     solanaWallet = res.data;
